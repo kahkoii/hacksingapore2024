@@ -7,7 +7,7 @@
 		"organizer": "SPCA",
 		"category": "animals",
 		"description": "Clean up pet shelters whilst playing with our resident cats and dogs",
-		"image": "#aaa"
+		"image": "./images/pet_shelter.png"
 	},
 	{
 		"id": 6,
@@ -17,7 +17,7 @@
 		"organizer": "NTUC Health",
 		"category": "elderly",
 		"description": "Chat with members of the elderly to make their day better",
-		"image": "#ef8272"
+		"image": "./images/elderly_engagement.jpg"
 	},
 	{
 		"id": 7,
@@ -27,7 +27,7 @@
 		"organizer": "SPCA",
 		"category": "animals",
 		"description": "Walk all of our dogs on a Sunday morning in Bishan park",
-		"image": "#a8118a"
+		"image": "./images/dog_walk.jpg"
 	},
 	{
 		"id": 8,
@@ -37,6 +37,6 @@
 		"organizer": "KKH",
 		"category": "children",
 		"description": "Chat and play board games with kids in our children ward",
-		"image": "#0029ab"
+		"image": "./images/children_ward.jpg"
 	}
 ]
