@@ -17,22 +17,23 @@ const EventBox: React.FC<EventBoxProps> = ({ event }) => {
 			height="auto"
 			flexDir="column"
 			alignItems="center"
-			paddingTop="40px"
+			paddingTop="50px"
 		>
 			<Box
 				bg="tomato"
-				w="90%"
+				w="70%"
 				maxW="800px"
 				mx="auto"
 				color="white"
-				px="40px"
+				px="0px"
+				borderRadius="8px"
+				boxShadow="md"
 			>
 				<div className="name-date-time-big">
 					<Avatar />
 					<div className="name-date-time-small">
 						<h3 className="name">{event.name}</h3>
 						<p>
-							{' '}
 							{event.date} {event.time}
 						</p>
 					</div>
