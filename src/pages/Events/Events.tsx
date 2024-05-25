@@ -25,6 +25,28 @@ const Events: React.FC = () => {
 				'Chat with members of the elderly to make their day better',
 			image: '#ef8272',
 		},
+		{
+			id: 7,
+			title: 'Dog Walk Morning',
+			date: '2024-06-10',
+			time: '09:00 AM',
+			organizer: 'SPCA',
+			category: 'animals',
+			description:
+				'Walk all of our dogs on a Sunday morning in Bishan park',
+			image: '#a8118a',
+		},
+		{
+			id: 8,
+			title: 'Children Ward Visit',
+			date: '2024-06-10',
+			time: '03:00 PM',
+			organizer: 'KKH',
+			category: 'children',
+			description:
+				'Chat and play board games with kids in our children ward',
+			image: '#0029ab',
+		},
 	]
 
 	return (
@@ -33,7 +55,9 @@ const Events: React.FC = () => {
 			alignItems="center"
 			gap="20px"
 			border="1px solid black"
-			height="100vh"
+			minHeight="100vh"
+			padding="20px 0"
+			marginBottom="80px"
 		>
 			{events.map((event) => (
 				<EventBox key={event.id} event={event} />
