@@ -18,6 +18,7 @@ const Navbar: React.FC = () => (
 			gap="30px"
 			justifyContent="center"
 			color="#929292"
+			bgColor="#fff"
 		>
 			<Flex
 				flexDir="column"
