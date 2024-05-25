@@ -21,6 +21,7 @@ const EventBox: React.FC<EventBoxProps> = ({ event }) => (
 		width="90vw"
 		maxWidth="600px"
 		boxShadow="md"
+		_hover={{ cursor: 'pointer' }}
 	>
 		<Box
 			bgColor={event.image}

@@ -1,4 +1,19 @@
-import { Box, Flex, Text, Select, Circle } from '@chakra-ui/react'
+import {
+	Box,
+	Flex,
+	Text,
+	Select,
+	Circle,
+	Modal,
+	ModalOverlay,
+	ModalContent,
+	ModalHeader,
+	ModalCloseButton,
+	ModalBody,
+	ModalFooter,
+	Button,
+	useDisclosure,
+} from '@chakra-ui/react'
 import { useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import DatePicker from 'react-datepicker'
@@ -12,6 +27,8 @@ const Events: React.FC = () => {
 	const [startDate, setStartDate] = useState(new Date())
 	const [endDate, setEndDate] = useState(new Date())
 	const [eventsData, setEventsData] = useState(eventsJson)
+	const [modalData, setModalData] = useState(eventsData[0])
+	const { isOpen, onOpen, onClose } = useDisclosure()
 
 	const handleSelectChange = (
 		event: React.ChangeEvent<HTMLSelectElement>,
@@ -123,9 +140,47 @@ const Events: React.FC = () => {
 				marginBottom="80px"
 			>
 				{eventsData.map((event) => (
-					<EventBox key={event.id} event={event} />
+					<Box
+						key={event.id}
+						onClick={() => {
+							console.log('hello')
+							setModalData(event)
+							onOpen()
+						}}
+					>
+						<EventBox event={event} />
+					</Box>
 				))}
 			</Flex>
+			<Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
+				<ModalOverlay />
+				<ModalContent>
+					<Box
+						height="160px"
+						borderRadius="5px 5px 0 0"
+						bgColor={modalData.image}
+					></Box>
+					<ModalHeader>{modalData.title}</ModalHeader>
+					<ModalCloseButton />
+					<ModalBody>
+						<Text fontWeight="bold" mb="1rem">
+							{modalData.date} @ {modalData.time}
+						</Text>
+						<Text fontWeight="normal" mb="1rem">
+							{modalData.description}
+						</Text>
+						<Text fontWeight="normal" mb="1rem">
+							Organized by: {modalData.organizer}
+						</Text>
+					</ModalBody>
+
+					<ModalFooter>
+						<Button colorScheme="green" mr={3} onClick={onClose}>
+							Register
+						</Button>
+					</ModalFooter>
+				</ModalContent>
+			</Modal>
 		</Flex>
 	)
 }
