@@ -156,9 +156,10 @@ const Events: React.FC = () => {
 				<ModalOverlay />
 				<ModalContent>
 					<Box
-						height="160px"
+						height="240px"
 						borderRadius="5px 5px 0 0"
-						bgColor={modalData.image}
+						bgImage={modalData.image}
+						bgSize="cover"
 					></Box>
 					<ModalHeader>{modalData.title}</ModalHeader>
 					<ModalCloseButton />
