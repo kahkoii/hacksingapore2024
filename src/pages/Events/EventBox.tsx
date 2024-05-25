@@ -5,7 +5,7 @@ interface EventBoxProps {
 	event: {
 		id: number
 		title: string
-		date: string
+		date: Date
 		time: string
 		organizer: string
 		category: string
@@ -40,7 +40,7 @@ const EventBox: React.FC<EventBoxProps> = ({ event }) => (
 					{event.title}
 				</Text>
 				<Text fontSize="lg" fontWeight="normal">
-					{event.date} @ {event.time}
+					{event.date.toString()} @ {event.time}
 				</Text>
 			</Flex>
 			<Flex
