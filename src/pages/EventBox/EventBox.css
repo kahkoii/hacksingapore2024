@@ -1,0 +1,28 @@
+.name {
+	font-size: 20px;
+	font-weight: 700;
+}
+.name-date-time-big{
+	display: flex;
+	padding: 9px;
+
+}
+
+
+.name-date-time-small{
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	
+}
+
+
+.event-title {
+	font-size: 22px;
+}
+
+.title-desc {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
