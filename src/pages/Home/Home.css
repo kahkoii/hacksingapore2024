@@ -1,4 +1,4 @@
-.logo {
+/* .logo {
 	height: 6em;
 	padding: 1.5em;
 	will-change: filter;
@@ -22,4 +22,33 @@
 	100% {
 		transform: rotate(360deg);
 	}
+} */
+
+.name {
+	font-size: 23px;
+	font-weight: 700;
+}
+.name-date-time-big{
+	display: flex;
+	padding: 9px;
+
+}
+
+
+.name-date-time-small{
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	
+}
+
+
+.event-title {
+	font-size: 22px;
+}
+
+.title-desc {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
 }
