@@ -1,8 +1,8 @@
-import './EventBox.css'
+import './ActivityBox.css'
 import { Flex, Box, Avatar } from '@chakra-ui/react'
 
-interface EventBoxProps {
-	event: {
+interface ActivityBoxProps {
+	activity: {
 		name: string
 		date: string
 		time: string
@@ -11,7 +11,7 @@ interface EventBoxProps {
 	}
 }
 
-const EventBox: React.FC<EventBoxProps> = ({ event }) => {
+const ActivityBox: React.FC<ActivityBoxProps> = ({ activity }) => {
 	return (
 		<Flex
 			height="auto"
@@ -30,18 +30,18 @@ const EventBox: React.FC<EventBoxProps> = ({ event }) => {
 				<div className="name-date-time-big">
 					<Avatar />
 					<div className="name-date-time-small">
-						<h3 className="name">{event.name}</h3>
+						<h3 className="name">{activity.name}</h3>
 						<p>
 							{' '}
-							{event.date} {event.time}
+							{activity.date} {activity.time}
 						</p>
 					</div>
 				</div>
 
 				<div className="title-desc">
-					<h2 className="event-title">{event.title}</h2>
-					<div className="event-desc">
-						<p>{event.description}</p>
+					<h2 className="activity-title">{activity.title}</h2>
+					<div className="activity-desc">
+						<p>{activity.description}</p>
 					</div>
 				</div>
 			</Box>
@@ -49,4 +49,4 @@ const EventBox: React.FC<EventBoxProps> = ({ event }) => {
 	)
 }
 
-export default EventBox
+export default ActivityBox

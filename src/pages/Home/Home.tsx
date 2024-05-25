@@ -1,9 +1,9 @@
 import './Home.css'
-import EventBox from '../EventBox/EventBox'
+import ActivityBox from '../ActivityBox/ActivityBox'
 import { Flex } from '@chakra-ui/react'
 
 const Home: React.FC = () => {
-	const events = [
+	const activities = [
 		{
 			id: 1,
 			name: 'Username',
@@ -30,8 +30,8 @@ const Home: React.FC = () => {
 			paddingTop="40px"
 			gap="20px"
 		>
-			{events.map((event) => (
-				<EventBox key={event.id} event={event} />
+			{activities.map((activity) => (
+				<ActivityBox key={activity.id} activity={activity} />
 			))}
 		</Flex>
 	)
