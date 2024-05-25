@@ -13,7 +13,7 @@ const Navbar: React.FC = () => (
 			position="fixed"
 			shadow="0px -6px 5px rgb(0, 0, 0, 0.2)"
 			borderRadius="30px 30px 0 0"
-			bottom="0"
+			bottom="-1px"
 			height="80px"
 			gap="30px"
 			justifyContent="center"

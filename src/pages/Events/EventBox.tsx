@@ -43,7 +43,12 @@ const EventBox: React.FC<EventBoxProps> = ({ event }) => (
 					{event.date} @ {event.time}
 				</Text>
 			</Flex>
-			<Flex flexDir="column" justifyContent="center" alignItems="end">
+			<Flex
+				flexDir="column"
+				justifyContent="center"
+				alignItems="end"
+				textAlign="end"
+			>
 				<Text fontSize="xl" fontWeight="normal">
 					{event.organizer}
 				</Text>
