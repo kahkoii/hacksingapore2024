@@ -15,7 +15,7 @@ const Navbar: React.FC = () => (
 			borderRadius="30px 30px 0 0"
 			bottom="-1px"
 			height="80px"
-			gap="30px"
+			gap="10vw"
 			justifyContent="center"
 			color="#929292"
 			bgColor="#fff"
@@ -31,10 +31,10 @@ const Navbar: React.FC = () => (
 					to="/"
 					_activeLink={{ color: '#FFD230' }}
 				>
-					<Box fontSize="50px" alignContent="center">
+					<Box fontSize="40px" alignContent="center">
 						<FaHome />
 					</Box>
-					<Text fontSize="12px" marginTop="-4px">
+					<Text fontSize="12px" marginTop="-2px">
 						HOME
 					</Text>
 				</ChakraLink>
@@ -50,10 +50,14 @@ const Navbar: React.FC = () => (
 					to="/events"
 					_activeLink={{ color: '#FFD230' }}
 				>
-					<Box fontSize="42px" alignContent="center">
+					<Box
+						paddingLeft="4px"
+						fontSize="36px"
+						alignContent="center"
+					>
 						<FaCalendarDay />
 					</Box>
-					<Text fontSize="12px" marginTop="4px">
+					<Text fontSize="12px" marginTop="2px">
 						EVENTS
 					</Text>
 				</ChakraLink>
@@ -69,7 +73,11 @@ const Navbar: React.FC = () => (
 					to="/rankings"
 					_activeLink={{ color: '#FFD230' }}
 				>
-					<Box fontSize="50px" alignContent="center">
+					<Box
+						paddingLeft="8px"
+						fontSize="40px"
+						alignContent="center"
+					>
 						<FaChartSimple />
 					</Box>
 					<Text fontSize="12px" marginTop="-2px">
@@ -88,10 +96,14 @@ const Navbar: React.FC = () => (
 					to="/profile"
 					_activeLink={{ color: '#FFD230' }}
 				>
-					<Box fontSize="44px" alignContent="center">
+					<Box
+						paddingLeft="5px"
+						fontSize="36px"
+						alignContent="center"
+					>
 						<FaRegUser />
 					</Box>
-					<Text fontSize="12px" marginTop="0px">
+					<Text fontSize="12px" marginTop="2px">
 						PROFILE
 					</Text>
 				</ChakraLink>

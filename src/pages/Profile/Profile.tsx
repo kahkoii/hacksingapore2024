@@ -2,7 +2,7 @@ import { Flex, Box, Text } from '@chakra-ui/react'
 import Avatar from 'boring-avatars'
 
 const Profile: React.FC = () => (
-	<Flex flexDir="column" alignItems="center">
+	<Flex flexDir="column" alignItems="center" height="100vh" bgColor="#FFD230">
 		<Box
 			height="68px"
 			boxShadow="lg"
@@ -21,6 +21,7 @@ const Profile: React.FC = () => (
 			padding="36px"
 			boxShadow="lg"
 			gap="8px"
+			bgColor="white"
 		>
 			<Text textAlign="center" fontWeight="bold" fontSize="2xl">
 				@Anytng

@@ -1,19 +1,18 @@
 {
-    "friendsRankings": [
-      { "username": "SilverFox78", "hours": 95 },
-      { "username": "MoonJazz", "hours": 88 },
-      { "username": "Rainbow76", "hours": 80 },
-      { "username": "Ocean34", "hours": 72 },
-      { "username": "Starlight", "hours": 65 },
-      { "username": "Mystic923", "hours": 60 }
-    ],
-    "singaporeRankings": [
-      { "username": "GoldenSuns", "hours": 90 },
-      { "username": "Crystalt_23", "hours": 85 },
-      { "username": "World24", "hours": 82 },
-      { "username": "CrimsonRed", "hours": 75 },
-      { "username": "SapphireSky", "hours": 68 },
-      { "username": "Emerald94", "hours": 70 }
-    ]
-  }
-  
+	"friendsRankings": [
+		{ "username": "SilverFox78", "hours": 63 },
+		{ "username": "MoonJazz", "hours": 61 },
+		{ "username": "Rainbow76", "hours": 61 },
+		{ "username": "Ocean34", "hours": 56 },
+		{ "username": "Starlight", "hours": 42 },
+		{ "username": "Mystic923", "hours": 29 }
+	],
+	"singaporeRankings": [
+		{ "username": "GoldenSuns", "hours": 98 },
+		{ "username": "Crystalt_23", "hours": 85 },
+		{ "username": "World24", "hours": 82 },
+		{ "username": "CrimsonRed", "hours": 75 },
+		{ "username": "SapphireSky", "hours": 68 },
+		{ "username": "Emerald94", "hours": 70 }
+	]
+}

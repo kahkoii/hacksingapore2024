@@ -53,7 +53,7 @@ const Events: React.FC = () => {
 	}
 
 	return (
-		<Flex flexDir="column" alignItems="center">
+		<Flex flexDir="column" alignItems="center" bgColor="#FFD230">
 			<Box
 				height="68px"
 				boxShadow="lg"
@@ -69,9 +69,10 @@ const Events: React.FC = () => {
 				flexDir="column"
 				alignItems="center"
 				width="100%"
-				margin="40px 0 0 0"
-				padding="0 20px 30px 20px"
-				borderBottom="1px solid #ccc"
+				padding="20px 20px 30px 20px"
+				borderTop="1px solid #ccc"
+				bgColor="#FFB81F"
+				boxShadow="lg"
 			>
 				<Flex
 					flexDir="row"
@@ -81,7 +82,7 @@ const Events: React.FC = () => {
 					gap="12px"
 					alignItems="center"
 				>
-					<Select onChange={handleSelectChange}>
+					<Select onChange={handleSelectChange} bgColor="white">
 						<option value="none">Categories</option>
 						<option value="animals">Animals</option>
 						<option value="children">Children</option>
