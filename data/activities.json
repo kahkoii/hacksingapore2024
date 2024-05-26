@@ -27,7 +27,7 @@
 		"time": "08:20 AM",
 		"organizer": "NEA",
 		"likes": 15,
-		"image": "./images/trash_cleanup.jpg"
+		"image": "../images/trash_cleanup.jpg"
 	},
 	{
 		"id": 4,
@@ -47,6 +47,6 @@
 		"time": "07:00 PM",
 		"organizer": "MOE",
 		"likes": 72,
-		"image": "./images/teaching_children.jpg"
+		"image": "../images/teaching_children.jpg"
 	}
 ]
