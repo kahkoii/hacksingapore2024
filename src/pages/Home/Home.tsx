@@ -4,7 +4,13 @@ import activitiesJson from '../../../data/activities.json'
 
 const Home: React.FC = () => {
 	return (
-		<Flex flexDir="column" alignItems="center" marginBottom="100px">
+		<Flex
+			flexDir="column"
+			alignItems="center"
+			marginBottom="40px"
+			paddingBottom="60px"
+			bgColor="#FFD230"
+		>
 			<Box
 				height="68px"
 				boxShadow="lg"
@@ -16,7 +22,7 @@ const Home: React.FC = () => {
 					Activity Feed
 				</Text>
 			</Box>
-			<Flex flexDir="column" marginTop="20px" gap="16px" padding="0 10px">
+			<Flex flexDir="column" marginTop="20px" gap="12px" padding="0 10px">
 				{activitiesJson.map((activity) => (
 					<ActivityBox key={activity.id} activity={activity} />
 				))}

@@ -32,6 +32,7 @@ const ActivityBox: React.FC<ActivityBoxProps> = ({ activity }) => {
 				maxWidth="600px"
 				alignItems="center"
 				boxShadow="md"
+				backgroundColor="white"
 			>
 				<Flex flexDir="row" padding="20px" gap="14px">
 					<Avatar
