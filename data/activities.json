@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"username": "wookabooka",
+		"name": "Walk for Rice",
+		"date": "2024-05-26",
+		"time": "10:00 AM",
+		"organizer": "NTUC",
+		"likes": 7,
+		"image": ""
+	},
+	{
+		"id": 2,
+		"username": "ILoveCSS",
+		"name": "Soup Kitchen Project",
+		"date": "2024-05-25",
+		"time": "04:00 PM",
+		"organizer": "Willing Hearts",
+		"likes": 23,
+		"image": ""
+	},
+	{
+		"id": 3,
+		"username": "CharizardSlayurr",
+		"name": "Beach Cleanup",
+		"date": "2024-05-12",
+		"time": "08:20 AM",
+		"organizer": "NEA",
+		"likes": 15,
+		"image": "./images/trash_cleanup.jpg"
+	},
+	{
+		"id": 4,
+		"username": "EggPlantEgg",
+		"name": "Grocery Distribution",
+		"date": "2024-05-07",
+		"time": "09:30 AM",
+		"organizer": "Sheng Shiong",
+		"likes": 2,
+		"image": ""
+	},
+	{
+		"id": 5,
+		"username": "Amogus",
+		"name": "Teaching Primary School Kids",
+		"date": "2024-04-30",
+		"time": "07:00 PM",
+		"organizer": "MOE",
+		"likes": 72,
+		"image": "./images/teaching_children.jpg"
+	}
+]
